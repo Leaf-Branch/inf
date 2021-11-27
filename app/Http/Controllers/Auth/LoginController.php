@@ -12,7 +12,7 @@ class LoginController extends Controller
 {
 
     public function formLogin(){
-        return view('layout.auth');
+        return view('login');
     }
 
     public function redirectToProvider()
