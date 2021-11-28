@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/auth/redirect', [\App\Http\Controllers\Auth\LoginController::class,'redirectToProvider']);
+Route::get('/auth/callback', [\App\Http\Controllers\Auth\LoginController::class,'handleProviderCallback']);
+
+Route::get('/logout',[\App\Http\Controllers\Auth\LoginController::class,'logout']);
+Route::get('/',[\App\Http\Controllers\Auth\LoginController::class,'formLogin']);
