@@ -43,7 +43,6 @@ class LoginController extends Controller
         }
         catch (\Exception $e){
             echo $e->getMessage();
-//            return redirect('/')->with('error','Error : '.$e->getMessage());
         }
     }
 
