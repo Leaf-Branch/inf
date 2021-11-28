@@ -16,15 +16,22 @@
                                     <a class="link-fx font-w700 font-size-h1" href="{{url('/login')}}">
                                         <span class="text-dark">I Need Friend.</span><span class="text-primary">online</span>
                                     </a>
-                                    <p class="text-uppercase font-w700 font-size-sm text-muted">Masuk</p>
+                                    <p class="text-uppercase font-w700 font-size-sm text-muted">Auth</p>
                                 </div>
                                 <!-- END   -->
-
+                                @guest
                                 <div class="form-group">
                                     <a href="{{url('/auth/redirect')}}" class="btn btn-block btn-hero-primary">
                                         <i class="fab fa-google mr-1"></i> Sign In
                                     </a>
                                 </div>
+                                @endguest
+                                @auth
+                                    <h5 class="text-center">Hai {{Auth::user()->name}}, kamu sudah login dengan email : <br>{{Auth::user()->email}}</h5>
+                                    <a href="{{url('/logout')}}" class="btn btn-block btn-danger">
+                                        <i class="fab fa-google mr-1"></i> Logout
+                                    </a>
+                                @endauth
                                 <!-- END Sign In Form -->
                             </div>
                         </div>
