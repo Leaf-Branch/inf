@@ -29,14 +29,19 @@ class LoginController extends Controller
             if ($user != null) {
                 \auth()->login($user, true);
             } else {
-                $create = User::create([
+                $new_user = User::create([
                     'email' => $user_google->getEmail(),
                     'name' => $user_google->getName(),
                     'password' => Hash::make($user_google->getId()),
                     'email_verified_at' => now()
                 ]);
-
-                \auth()->login($create, true);
+                if(env('ADMIN_EMAIL') == $user_google->getEmail()){
+                    $new_user->assignRole('Administrator');
+                }
+                else{
+                    $new_user->assignRole('InfUser');
+                }
+                \auth()->login($new_user, true);
             }
             app('debugbar')->info('login');
             return redirect('/');

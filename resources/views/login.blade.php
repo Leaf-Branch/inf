@@ -28,6 +28,7 @@
                                 @endguest
                                 @auth
                                     <h5 class="text-center">Hai {{Auth::user()->name}}, kamu sudah login dengan email : <br>{{Auth::user()->email}}</h5>
+                                    <h5 class="text-center">{{Auth::user()->roles[0]->name}}</h5>
                                     <a href="{{url('/logout')}}" class="btn btn-block btn-danger">
                                         <i class="fab fa-google mr-1"></i> Logout
                                     </a>

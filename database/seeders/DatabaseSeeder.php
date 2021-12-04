@@ -13,6 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        //create roles
+        $role_admin = \Spatie\Permission\Models\Role::create(['name' => 'Administrator']);
+        $role_user = \Spatie\Permission\Models\Role::create(['name' => 'InfUser']);
     }
 }
