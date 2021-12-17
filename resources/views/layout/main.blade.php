@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Login - I need a friend.</title>
+    <title>{{$title ? $title."-" : ""}}I need a friend.</title>
     <meta name="description" content="Login - I need a friend.">
     <meta name="author" content="kyrozyn">
 
     <!-- Open Graph Meta -->
-    <meta property="og:title" content="Login - I need a friend.">
+    <meta property="og:title" content="I need a friend.">
     <meta property="og:site_name" content="I need a friend.">
-    <meta property="og:description" content="Login - I need a friend.">
+    <meta property="og:description" content="I need a friend.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -31,6 +31,8 @@
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
     <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
     <!-- END Stylesheets -->
+    @livewireStyles
+    @yield('css')
 </head>
 <body>
 
@@ -64,11 +66,7 @@
     webpack is putting everything together at assets/_js/main/app.js
 -->
 <script src="{{asset('assets/js/dashmix.app.min.js')}}"></script>
-
-<!-- Page JS Plugins -->
-<script src="{{asset('assets/js/plugins/jquery-validation/jquery.validate.min.js')}}"></script>
-
-<!-- Page JS Code -->
-<script src="{{asset('assets/js/pages/op_auth_signin.min.js')}}"></script>
+@livewireScripts
+@yield('script')
 </body>
 </html>

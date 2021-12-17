@@ -1,6 +1,7 @@
 <?php
 
 // @formatter:off
+
 /**
  * A helper file for your Eloquent Models
  * Copy the phpDocs from this file to the correct Model,
@@ -10,15 +11,28 @@
  */
 
 
-namespace App\Models{
-/**
- * App\Models\User
- *
- * @property int $id
- * @property string $name
- * @property string $email
- * @property \Illuminate\Support\Carbon|null $email_verified_at
- * @property string $password
+namespace App\Models {
+    /**
+     * App\Models\Post
+     *
+     * @method static \Illuminate\Database\Eloquent\Builder|Post newModelQuery()
+     * @method static \Illuminate\Database\Eloquent\Builder|Post newQuery()
+     * @method static \Illuminate\Database\Eloquent\Builder|Post query()
+     */
+    class Post extends \Eloquent
+    {
+    }
+}
+
+namespace App\Models {
+    /**
+     * App\Models\User
+     *
+     * @property int $id
+     * @property string $name
+     * @property string $email
+     * @property \Illuminate\Support\Carbon|null $email_verified_at
+     * @property string $password
  * @property string|null $remember_token
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at

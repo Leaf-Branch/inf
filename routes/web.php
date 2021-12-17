@@ -19,3 +19,7 @@ Route::get('/auth/callback', [\App\Http\Controllers\Auth\LoginController::class,
 
 Route::get('/logout',[\App\Http\Controllers\Auth\LoginController::class,'logout']);
 Route::get('/',[\App\Http\Controllers\Auth\LoginController::class,'formLogin']);
+//route for cafe
+Route::get('/cafe',function (){
+    return view('layout.cafe');
+});
