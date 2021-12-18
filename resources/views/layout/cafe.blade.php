@@ -29,7 +29,7 @@
     <link rel="stylesheet" id="css-main" href="{{asset('assets/css/dashmix.min.css')}}">
 
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
+    <link rel="stylesheet" id="css-theme" href="{{asset('assets/css/themes/xdream.min.css')}}">
     <!-- END Stylesheets -->
     @livewireStyles
     @yield('css')
@@ -84,7 +84,7 @@ MAIN CONTENT LAYOUT
     'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
     'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
 -->
-<div id="page-container" class="sidebar-dark enable-page-overlay side-scroll page-header-fixed page-header-dark main-content-boxed">
+<div id="page-container" class="sidebar-dark enable-page-overlay side-scroll page-header-fixed page-header-dark  main-content-boxed bg-xdream-darker">
     <!-- Side Overlay-->
     <aside id="side-overlay">
         <!-- Side Header -->
@@ -173,10 +173,10 @@ MAIN CONTENT LAYOUT
         <div class="content-header bg-primary">
             <!-- Logo -->
             <a class="text-dual d-inline-block" href="index.html">
-                <i class="fa fa-campground"></i>
+                <i class="fa fa-coffee"></i>
             </a>
             <!-- END Logo -->
-
+            Inf's Café
             <!-- Options -->
             <div>
                 <!-- Close Sidebar, Visible only on mobile screens -->
@@ -189,7 +189,7 @@ MAIN CONTENT LAYOUT
         </div>
         <!-- END Side Header -->
 
-        <!-- Sidebar Scrolling -->
+        <!-- Sidebar Scrolling Mobile-->
         <div class="js-sidebar-scroll">
             <!-- User Info -->
             <div class="smini-hidden">
@@ -214,94 +214,6 @@ MAIN CONTENT LAYOUT
                             <span class="nav-main-link-name">My Profile</span>
                         </a>
                     </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon far fa-bell"></i>
-                            <span class="nav-main-link-name">Notifications</span>
-                            <span class="nav-main-link-badge badge badge-pill badge-info">6</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon far fa-envelope-open"></i>
-                            <span class="nav-main-link-name">Messages</span>
-                            <span class="nav-main-link-badge badge badge-pill badge-info">1</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-heading">Home</li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link active" href="db_social_compact.html">
-                            <i class="nav-main-link-icon far fa-newspaper"></i>
-                            <span class="nav-main-link-name">News Feed</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon far fa-gem"></i>
-                            <span class="nav-main-link-name">Marketplace</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-heading">Explore</li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon far fa-calendar-alt"></i>
-                            <span class="nav-main-link-name">Events</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon far fa-user"></i>
-                            <span class="nav-main-link-name">Groups</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon far fa-file-alt"></i>
-                            <span class="nav-main-link-name">Pages</span>
-                            <span class="nav-main-link-badge badge badge-pill badge-danger">32</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon far fa-images"></i>
-                            <span class="nav-main-link-name">Photos</span>
-                            <span class="nav-main-link-badge badge badge-pill badge-warning">14</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
-                            <i class="nav-main-link-icon fa fa-plus"></i>
-                            <span class="nav-main-link-name">More</span>
-                        </a>
-                        <ul class="nav-main-submenu">
-                            <li class="nav-main-item">
-                                <a class="nav-main-link" href="">
-                                    <i class="nav-main-link-icon far fa-clock"></i>
-                                    <span class="nav-main-link-name">On This Day</span>
-                                </a>
-                            </li>
-                            <li class="nav-main-item">
-                                <a class="nav-main-link" href="">
-                                    <i class="nav-main-link-icon far fa-newspaper"></i>
-                                    <span class="nav-main-link-name">Pages Feed</span>
-                                </a>
-                            </li>
-                            <li class="nav-main-item">
-                                <a class="nav-main-link" href="">
-                                    <i class="nav-main-link-icon fa fa-gamepad"></i>
-                                    <span class="nav-main-link-name">Games</span>
-                                    <span class="nav-main-link-badge badge badge-pill badge-success">25</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-main-heading">Dashboards</li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="be_pages_dashboard_all.html">
-                            <i class="nav-main-link-icon fa fa-arrow-left"></i>
-                            <span class="nav-main-link-name">Go Back</span>
-                        </a>
-                    </li>
                 </ul>
             </div>
             <!-- END Side Navigation -->
@@ -318,9 +230,10 @@ MAIN CONTENT LAYOUT
             <div class="d-flex align-items-center">
                 <!-- Logo -->
                 <a class="btn btn-dual mr-2" href="index.html">
-                    <i class="fa fa-campground"></i>
+                    <i class="fa fa-coffee"></i>
                 </a>
                 <!-- END Logo -->
+                Inf's Café
             </div>
             <!-- END Left Section -->
 
@@ -328,7 +241,7 @@ MAIN CONTENT LAYOUT
             <div>
                 <!-- User Profile -->
                 <a class="btn btn-dual d-none d-sm-inline-block"  href="javascript:void(0)">
-                    <i class="fa fa-user-circle mr-1"></i> Stella
+                    <i class="fa fa-user-circle mr-1"></i>
                 </a>
                 <!-- END User Profile -->
 
@@ -457,7 +370,7 @@ MAIN CONTENT LAYOUT
         <div class="content content-full">
             <div class="row gutters-tiny">
                 <div class="col-lg-3 d-none d-lg-block">
-                    <!-- User and Main Navigation -->
+                    <!-- User and Main Navigation XL  -->
                     <div class="block block-bordered block-rounded">
                         <div class="block-content">
                             <div class="bg-body rounded p-2 mb-3 d-flex align-items-center">
@@ -465,103 +378,16 @@ MAIN CONTENT LAYOUT
                                     <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar8.jpg" alt="">
                                 </a>
                                 <div class="ml-3">
-                                    <a class="font-w600" href="javascript:void(0)">Stella Smith</a>
-                                    <div class="font-size-sm font-italic text-muted">Developer</div>
+                                    <a class="font-w600" href="javascript:void(0)">Kyro#<small>2217</small></a>
+                                    <div class="font-size-sm"><i class="fa fa-star"></i> 0</div>
                                 </div>
                             </div>
                             <ul class="nav-main">
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon far fa-user-circle"></i>
-                                        <span class="nav-main-link-name">My Profile</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon far fa-bell"></i>
-                                        <span class="nav-main-link-name">Notifications</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-info">6</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon far fa-envelope-open"></i>
-                                        <span class="nav-main-link-name">Messages</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-info">1</span>
-                                    </a>
-                                </li>
                                 <li class="nav-main-heading">Home</li>
                                 <li class="nav-main-item">
                                     <a class="nav-main-link active" href="db_social_compact.html">
                                         <i class="nav-main-link-icon far fa-newspaper"></i>
-                                        <span class="nav-main-link-name">News Feed</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon far fa-gem"></i>
-                                        <span class="nav-main-link-name">Marketplace</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-heading">Explore</li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon far fa-calendar-alt"></i>
-                                        <span class="nav-main-link-name">Events</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon far fa-user"></i>
-                                        <span class="nav-main-link-name">Groups</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon far fa-file-alt"></i>
-                                        <span class="nav-main-link-name">Pages</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-danger">32</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon far fa-images"></i>
-                                        <span class="nav-main-link-name">Photos</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-warning">14</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
-                                        <i class="nav-main-link-icon fa fa-plus"></i>
-                                        <span class="nav-main-link-name">More</span>
-                                    </a>
-                                    <ul class="nav-main-submenu">
-                                        <li class="nav-main-item">
-                                            <a class="nav-main-link" href="">
-                                                <i class="nav-main-link-icon far fa-clock"></i>
-                                                <span class="nav-main-link-name">On This Day</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-main-item">
-                                            <a class="nav-main-link" href="">
-                                                <i class="nav-main-link-icon far fa-newspaper"></i>
-                                                <span class="nav-main-link-name">Pages Feed</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-main-item">
-                                            <a class="nav-main-link" href="">
-                                                <i class="nav-main-link-icon fa fa-gamepad"></i>
-                                                <span class="nav-main-link-name">Games</span>
-                                                <span class="nav-main-link-badge badge badge-pill badge-success">25</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-main-heading">Dashboards</li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_pages_dashboard_all.html">
-                                        <i class="nav-main-link-icon fa fa-arrow-left"></i>
-                                        <span class="nav-main-link-name">Go Back</span>
+                                        <span class="nav-main-link-name">Café</span>
                                     </a>
                                 </li>
                             </ul>
@@ -572,7 +398,7 @@ MAIN CONTENT LAYOUT
                 <div class="col-md-8 col-lg-9">
                     <!-- Post Update -->
                     <div class="block block-bordered block-rounded">
-                        <div class="block-content block-content-full">
+                        <div class="block-content block-content-full bg-xdream-dark-op">
                             <form action="db_social_compact.html" method="POST" onsubmit="return false;">
                                 <div class="input-group">
                                     <textarea type="text" class="form-control form-control-alt" placeholder="What’s happening?"></textarea>
@@ -590,7 +416,7 @@ MAIN CONTENT LAYOUT
                     <!-- Timeline -->
                     <!-- Update #1 -->
                     <div class="block block-rounded block-bordered invisible" data-toggle="appear">
-                        <div class="block-header block-header-default">
+                        <div class="block-header block-header-default bg-xdream-lighter">
                             <div>
                                 <a class="img-link" href="javascript:void(0)">
                                     <img class="img-avatar img-avatar32 img-avatar-thumb" src="assets/media/avatars/avatar2.jpg" alt="">
